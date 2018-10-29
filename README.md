@@ -7,15 +7,13 @@
 #### Amdahl's law
 
 *Amdahl's law* is a formula which gives the theoretical speedup in latency of the execution of a task at fixed workload that can be expected of a system whose resources are improved. Named after computer scientist *Gene Amdahl*.
-$$
-S_{latency}(s)=\frac{1}{(1-p)+\frac{p}{s}}
-$$
+<img src="https://latex.codecogs.com/png.latex?S_{latency}(s)=\frac{1}{(1-p)&plus;\frac{p}{s}}" title="S_{latency}(s)=\frac{1}{(1-p)+\frac{p}{s}}" align="middle"/>
 
-- ***S*** is the theoretical speedup of the execution of the whole task;
-- ***s*** is the speedup of the part of the task that benefits from improved system resources;
-- ***p*** is the proportion of execution time that the part benefiting from improved resources originally occupied.
+- <img src="https://latex.codecogs.com/png.latex?S_{latency}" title="S_{latency}" /> is the theoretical speedup of the execution of the whole task;
+- *s* is the speedup of the part of the task that benefits from improved system resources;
+- *p* is the proportion of execution time that the part benefiting from improved resources originally occupied.
 
-<img src="https://latex.codecogs.com/png.latex?S_{latency}(s)=\frac{1}{(1-p)&plus;\frac{p}{s}}" title="S_{latency}(s)=\frac{1}{(1-p)+\frac{p}{s}}" />
+
 
 #### Profiling
 
