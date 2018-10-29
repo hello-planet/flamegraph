@@ -15,7 +15,7 @@ $$
 - ***s*** is the speedup of the part of the task that benefits from improved system resources;
 - ***p*** is the proportion of execution time that the part benefiting from improved resources originally occupied.
 
-
+<img src="https://latex.codecogs.com/png.latex?S_{latency}(s)=\frac{1}{(1-p)&plus;\frac{p}{s}}" title="S_{latency}(s)=\frac{1}{(1-p)+\frac{p}{s}}" />
 
 #### Profiling
 
@@ -147,12 +147,12 @@ func index(w http.ResponseWriter, _ *http.Request) {
 
 We can try to fetch the stack traces procedure with go tool pprof.
 
-Run the server and start the go-wrk benchmark test. Use the pprof tool to listen to the `http://localhost:8080/debug/pprof/profile`.
+Run the server and start the go-wrk benchmark test. Use the pprof tool to listen to  `http://localhost:8080/debug/pprof/profile`.
 
 ```shell
-(console 1)$ go run main.go -stats
-(concole 2)$ go-wrk -c 200 -t 4 -n 100000 http://localhost:8080/stats
-(console 3)$ go tool pprof --seconds 15 http://localhost:8080/debug/pprof/profile
+(console 1) $ go run main.go -stats
+(concole 2) $ go-wrk -c 200 -t 4 -n 100000 http://localhost:8080/stats
+(console 3) $ go tool pprof --seconds 15 http://localhost:8080/debug/pprof/profile
 ```
 
 When we got these information, print "web" and we got a svg file in browser.
@@ -170,7 +170,7 @@ Entering interactive mode (type "help" for commands, "o" for options)
 
 ```
 
-We can get the output of a complete program stack traces sampling profile.
+We can get the output of a complete program sampling profile of stack traces .
 
 ![pprof](data/pprof.png)
 
@@ -181,9 +181,9 @@ This type of diagram has a shortcoming, which is that, when level becomes deep, 
 Now we can use go-torch to generate the visiualization of stack traces. go-torch will call and transfer the flag to the pprof tools.
 
 ```shell
-(console 1)$ go run main.go -stats
-(console 2)$ go-wrk -c 200 -t 4 -n 100000  http://localhost:8080/stats
-(console 3)$ go-torch -u http://localhost:8080 -t 15
+(console 1) $ go run main.go -stats
+(console 2) $ go-wrk -c 200 -t 4 -n 100000  http://localhost:8080/stats
+(console 3) $ go-torch -u http://localhost:8080 -t 15
 ```
 
 When we got this information, a svg file named "torch.svg" will be generated in current directory. We can observe it with broswer.
