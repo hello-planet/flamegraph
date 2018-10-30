@@ -4,10 +4,10 @@
 
 #### Contents
 
-- [Amdahl's Law](#amdahl's law)
+- [Amdahl's Law](#amdahl's-law)
 - [Profiling](#profiling)
 - [Golang](#golang)
-- [Flame Graphs](#flame grahps)
+- [Flame Graphs](#flame-grahps)
 - [Reference](#reference)
 - [Glossary](#glossary)
 
