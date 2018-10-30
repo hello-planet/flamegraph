@@ -2,15 +2,17 @@
 
 **Yankun 28th Oct. 2018**
 
+[TOC]
+
 
 
 #### Amdahl's law
 
 *Amdahl's law* is a formula which gives the theoretical speedup in latency of the execution of a task at fixed workload that can be expected of a system whose resources are improved. Named after computer scientist *Gene Amdahl*.
 
-<div align:"center">
+
 <img src="https://latex.codecogs.com/png.latex?S_{latency}(s)=\frac{1}{(1-p)&plus;\frac{p}{s}}" />
-</div>
+
 
 
 
