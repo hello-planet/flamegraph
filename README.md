@@ -2,11 +2,18 @@
 
 **Yankun 28th Oct. 2018**
 
-[TOC]
+#### Contents
+
+- [Amdahl's Law](#amdahl's law)
+- [Profiling](#profiling)
+- [Golang](#golang)
+- [Flame Graphs](#flame grahps)
+- [Reference](#reference)
+- [Glossary](#glossary)
 
 
 
-#### Amdahl's law
+#### Amdahl's Law
 
 *Amdahl's law* is a formula which gives the theoretical speedup in latency of the execution of a task at fixed workload that can be expected of a system whose resources are improved. Named after computer scientist *Gene Amdahl*.
 
