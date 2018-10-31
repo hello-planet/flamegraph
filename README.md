@@ -7,7 +7,7 @@
 - [Amdahl's Law](#amdahl's-law)
 - [Profiling](#profiling)
 - [Golang](#golang)
-- [Flame Graphs](#flame-grahps)
+- [Flame Graphs](#flame-graphs)
 - [Reference](#reference)
 - [Glossary](#glossary)
 
