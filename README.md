@@ -18,9 +18,9 @@
 *Amdahl's law* is a formula which gives the theoretical speedup in latency of the execution of a task at fixed workload that can be expected of a system whose resources are improved. Named after computer scientist *Gene Amdahl*.
 
 
+<p align="center">
 <img src="https://latex.codecogs.com/png.latex?S_{latency}(s)=\frac{1}{(1-p)&plus;\frac{p}{s}}" />
-
-
+</p>
 
 
 - <img src="https://latex.codecogs.com/png.latex?S_{latency}" /> is the theoretical speedup of the execution of the whole task;
@@ -179,7 +179,6 @@ Time: Oct 25, 2018 at 10:06am (CST)
 Duration: 14.98s, Total samples = 10.98s (73.29%)
 Entering interactive mode (type "help" for commands, "o" for options)
 (pprof) web
-
 ```
 
 We can get the output of a complete program sampling profile of stack traces .
